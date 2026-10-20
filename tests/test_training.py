@@ -109,4 +109,4 @@ def test_quick_training_end_to_end(tmp_path, monkeypatch, clean_frame):
     runs = client.search_runs([exp.experiment_id])
     assert len(runs) >= 5 + 1 + 2 * 5  # families + selection + at least 2 trials each
     mv = client.get_model_version_by_alias(cfg.MLFLOW_REGISTERED_MODEL, cfg.MLFLOW_PRODUCTION_ALIAS)
-    assert mv.version == "1"
+    assert str(mv.version) == "1"
