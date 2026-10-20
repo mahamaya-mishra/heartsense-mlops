@@ -1,7 +1,5 @@
 # HeartSense: heart-disease risk prediction with an end-to-end MLOps pipeline
 
-[![mlops-pipeline](https://github.com/mahamaya-mishra/heartsense-mlops/actions/workflows/mlops-pipeline.yml/badge.svg)](https://github.com/mahamaya-mishra/heartsense-mlops/actions/workflows/mlops-pipeline.yml)
-
 HeartSense predicts the probability that a patient has heart disease from 13 routine clinical
 measurements (UCI Heart Disease, Cleveland subset) and serves that prediction as a monitored,
 containerised API on Kubernetes. Every stage is code in this repository and runs from a clean
