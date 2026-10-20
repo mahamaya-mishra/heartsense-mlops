@@ -75,7 +75,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        python: ["3.11", "3.12"]
+        python: ["3.12"]  # pinned numpy 2.5 ships wheels for 3.12+ only
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

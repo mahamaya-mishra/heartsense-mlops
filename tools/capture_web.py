@@ -31,7 +31,7 @@ def reachable(url: str) -> bool:
 
 
 def shot(page, url: str, name: str, wait: float = 2.0, full: bool = True, actions=None):
-    page.goto(url, wait_until="networkidle", timeout=60000)
+    page.goto(url, wait_until="load", timeout=60000)
     time.sleep(wait)
     if actions:
         actions(page)

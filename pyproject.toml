@@ -38,6 +38,7 @@ ignore = ["RUF012", "N803", "N806"]  # X / X_train are the scikit-learn conventi
 [tool.ruff.lint.per-file-ignores]
 "tests/*" = ["B011"]
 "scripts/build_notebook.py" = ["E501"]  # markdown prose cells
+"tools/build_report.py" = ["E501"]  # report prose
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
